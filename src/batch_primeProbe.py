@@ -42,8 +42,7 @@ def main(args):
 
     cacheType = args['cacheType']
     if cacheType == 0:
-        cache = mirageCache(args['numLines'], args['associativity'], args['lineSize'],\
-                args['numExtraPerSet'], args['debug'])
+        cache = setAssocRandomCache(args['numLines'], args['associativity'], args['lineSize']) 
     elif cacheType == 1:
         cache = skewedCeaserCache(args['numLines'], args['associativity'], args['lineSize'],\
                 args['numHG'], args['key'], args['debug'])
