@@ -5,7 +5,7 @@ This is the official demonstration code for Metior, a comprehensive model to eva
 This repository contains the code required to reproduce Figure 7 of Case Study I.
 Specifically, it contains code that:
 
-1. Models varying secure cache architectures (including MIRAGE) under different configurations.
+1. Models varying secure cache architectures under different configurations.
 2. Performs Monte Carlo simulations using these models to derive the probabilistic observations under a cache-occupancy attack scenario.
 3. Derives the Maximal Leakage for each attack strategy considered, plotting the space sweep using matplotlib.
 
@@ -29,4 +29,4 @@ A brief overview of the source code included in this repository (found in *src/*
 - *cacheObj.py*: Defines default parameters for the cache architecture being studied (including number of cache lines, line size, etc.).
 - *dag.py/dagGen.py*: Internal DAG representations for the attacker/victim's access patterns.
 - *calculateLeakage.py**: Computes the Maximal Leakage for an attacker's observations. The input is a dictionary, where the keys are the victim modulation pattern, and the values are lists of attacker observations.
-- *caches/*: Includes models for varying secure cache architectures (including MIRAGE).
+- *caches/*: Includes models for varying secure cache architectures.
